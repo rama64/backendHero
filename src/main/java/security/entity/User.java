@@ -9,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
@@ -36,7 +35,7 @@ public class User {
     
     public User() { }
 
-    public User(String namee, String userName, String email, String password) {
+    public User(String name, String userName, String email, String password) {
         this.name = name;
         this.userName = userName;
         this.email = email;
